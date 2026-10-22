@@ -1,9 +1,11 @@
 main p { 
     font-weight: bolder;
+    color: teal;
 }
 
-ol ~ p {
-    color: teal;
+img {
+    float: center;
+    margin-left: 4em;
 }
 
 ol > li {
@@ -12,6 +14,15 @@ ol > li {
     line-height: 1.4em;
 }
 
+li.programmer, .programmer {
+    color: darkorchid;
+    font-variant: small-caps;
+}
+
+main {
+    clear: left;
+}   
+
 h1 , footer {
     color: darkslategray;
 }
@@ -19,9 +30,4 @@ h1 , footer {
 a[href] {
     color: seagreen;
     font-weight: 900;
-}
-
-li.programmer {
-    color: darkorchid;
-    font-variant: small-caps;
 }
