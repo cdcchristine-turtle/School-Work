@@ -1,0 +1,30 @@
+h1 {
+  color: blue;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+article {
+  column-count: 4;
+  column-gap: 1em;
+}
+
+p.first::first-letter {
+  font-size: 200%;
+}
+
+p:first-child {
+  order: 1;
+  background-color: lightgray;
+}
+
+p:second-child {
+  order: 2;
+  background-color: lightyellow;
+}
+
+p:last-child {
+  order: 3;
+  background-color: lightgreen;
+}
