@@ -1,14 +1,22 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url(img/space-background.jpg);
+        background: url(img/AdobeStock_419472598.jpeg) no-repeat center center fixed;
     color: #333;
     margin: 0;
     padding: 20px;
 }
 
 h1 {
+    font-family:  algerian;
     color: rgb(248, 231, 255);
+    text-align: center;
+    font-size: 3em;
     text-shadow: 2px 2px #333;
+}
+
+h2 {
+    font-family: Tahoma;
+    color: #9d4ad1;
+    margin-top: 0;
 }
 
 .grid-container {
