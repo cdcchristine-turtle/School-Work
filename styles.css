@@ -1,0 +1,56 @@
+/* Adjusting with Chapter 2 and Chapter 10 Videos */
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body p {
+    color: teal;
+    line-height: 1.5;
+}
+
+ul > li {
+    font-weight: bold;
+    line-height: 1.4;
+}
+.background { 
+    background-image: url(adobestock_pinkish.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+    
+h1 , footer {
+    color: darkslategray;
+}
+/* Adding Class Selector */
+.chapter_link {
+    line-height: 2.0;
+}
+/* Adding grid template areas */
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px 80px 1fr 1fr 60px;
+    gap: 40px;
+    grid-template-areas: 
+        "head head"
+        "main main"
+        "sec1 sec2"
+        "sec3 sec4"
+        "foot foot";
+    margin: 2% 5% 2% 5%;
+
+}
+/* Adding ID Selector for sections of grid template */
+header 	{ grid-area: head; }
+main 	{ grid-area: main; 
+        text-align: center; }
+#s1 	{ grid-area: sec1; 
+        align-items: center;}
+#s2 	{ grid-area: sec2; 
+        align-items: center;}
+#s3 	{ grid-area: sec3; 
+        align-items: center;}
+#s4 	{ grid-area: sec4; 
+        align-items: center;}
+footer 	{ grid-area: foot; }
