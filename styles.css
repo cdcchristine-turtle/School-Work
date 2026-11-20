@@ -2,15 +2,18 @@
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-
 body p {
     color: teal;
-    line-height: 1.5;
 }
-
 ul > li {
     font-weight: bold;
-    line-height: 1.4;
+}
+h1 , footer {
+    color: teal;
+}
+/* Adding Class Selectors */
+.chapter_link {
+    line-height: 1.5em;
 }
 .background { 
     background-image: url(adobestock_pinkish.jpeg);
@@ -18,19 +21,17 @@ ul > li {
     background-size: cover;
     background-blend-mode: lighten;
 }
-    
-h1 , footer {
-    color: darkslategray;
-}
-/* Adding Class Selector */
-.chapter_link {
-    line-height: 2.0;
+.flex-bg { /* Adding Flexbox background for contrasting text readability */
+    background-color: rgba(236, 139, 166, 0.662);
+    padding: 10px;
+    border-radius: 10px;
 }
 /* Adding grid template areas */
 body {
+    font-size: 1.8em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 60px 80px 1fr 1fr 60px;
+    grid-template-rows: repeat(5, auto);
     gap: 40px;
     grid-template-areas: 
         "head head"
@@ -42,15 +43,24 @@ body {
 
 }
 /* Adding ID Selector for sections of grid template */
-header 	{ grid-area: head; }
+header 	{ grid-area: head; 
+        text-align: center; 
+}
 main 	{ grid-area: main; 
-        text-align: center; }
+        text-align: center; 
+}
 #s1 	{ grid-area: sec1; 
-        align-items: center;}
+        align-items: center;
+        padding: 0 1em 0 2em;}
 #s2 	{ grid-area: sec2; 
-        align-items: center;}
+        align-items: center;
+        padding: 0 1em 0 2em;}
 #s3 	{ grid-area: sec3; 
-        align-items: center;}
+        align-items: center;
+        padding: 0 1em 0 2em;}
 #s4 	{ grid-area: sec4; 
-        align-items: center;}
-footer 	{ grid-area: foot; }
+        align-items: center;
+        padding: 0 1em 0 2em;}
+footer 	{ grid-area: foot; 
+        font-size: 0.8em;
+        text-align: center; }
